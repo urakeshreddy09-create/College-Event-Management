@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect | Discover College Events</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. HEADER / NAVBAR -->
+    <header class="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-graduation-cap"></i> Campus Connect
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#events">Events</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="create-event.html" class="btn btn-primary">Create Event</a>
+            </div>
+
+            <button class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Your Campus. Your Events.</span>
+                <h1 class="hero-title">
+                    Discover What's Happening On <span class="highlight">Campus</span>
+                </h1>
+                <p class="hero-description">
+                    Join thousands of students discovering and creating unforgettable experiences. From tech workshops to cultural fests, find your next favorite event today.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#events" class="btn btn-primary btn-large">Explore Events</a>
+                    <a href="#about" class="btn btn-secondary btn-large">Learn More</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Events</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Clubs</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Students</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visuals">
+                <!-- Abstract visual representation of a preview card with gradients instead of external image -->
+                <div class="hero-card main-card">
+                    <div class="card-image-placeholder">
+                        <img src="images/event1.jpg" alt="Tech Symposium" class="cover-img">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-badge">Hackathon</span>
+                        <h3>Annual Tech Symposium 2024</h3>
+                        <p class="card-meta"><i class="fa-regular fa-calendar"></i> Oct 15 • 9:00 AM</p>
+                        <p class="card-meta"><i class="fa-solid fa-location-dot"></i> Main Auditorium</p>
+                    </div>
+                </div>
+                
+                <div class="floating-card float-1">
+                    <div class="float-icon gradient-2"><i class="fa-solid fa-music"></i></div>
+                    <div class="float-text">
+                        <strong>Cultural Night</strong>
+                        <span>120 attendees joining</span>
+                    </div>
+                </div>
+
+                <div class="floating-card float-2">
+                    <div class="float-icon gradient-3"><i class="fa-solid fa-check"></i></div>
+                    <div class="float-text">
+                        <strong>Registration Confirmed</strong>
+                        <span>Web Dev Workshop</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SEARCH SECTION -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-panel">
+                <div class="search-input-group">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" placeholder="Search for events, clubs, or activities..." class="search-input">
+                </div>
+                <div class="search-divider"></div>
+                <div class="search-select-group">
+                    <i class="fa-solid fa-list select-icon"></i>
+                    <select class="search-select">
+                        <option value="">Any Category</option>
+                        <option value="tech">Technology</option>
+                        <option value="sports">Sports</option>
+                        <option value="cultural">Cultural</option>
+                    </select>
+                </div>
+                <div class="search-divider"></div>
+                <div class="search-select-group">
+                    <i class="fa-regular fa-calendar select-icon"></i>
+                    <select class="search-select">
+                        <option value="">Any Date</option>
+                        <option value="today">Today</option>
+                        <option value="tomorrow">Tomorrow</option>
+                        <option value="weekend">This Weekend</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary search-btn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CATEGORY SECTION -->
+    <section id="categories" class="categories bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Browse By Category</h2>
+                <p class="section-description">Find the perfect events that match your interests and passions.</p>
+            </div>
+            
+            <div class="category-grid">
+                <a href="#" class="category-card">
+                    <div class="category-icon text-purple bg-purple-light">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="category-name">Technology</h3>
+                    <p class="category-count">124 Events</p>
+                </a>
+                
+                <a href="#" class="category-card">
+                    <div class="category-icon text-orange bg-orange-light">
+                        <i class="fa-solid fa-basketball"></i>
+                    </div>
+                    <h3 class="category-name">Sports</h3>
+                    <p class="category-count">86 Events</p>
+                </a>
+                
+                <a href="#" class="category-card">
+                    <div class="category-icon text-pink bg-pink-light">
+                        <i class="fa-solid fa-masks-theater"></i>
+                    </div>
+                    <h3 class="category-name">Cultural</h3>
+                    <p class="category-count">53 Events</p>
+                </a>
+                
+                <a href="#" class="category-card">
+                    <div class="category-icon text-blue bg-blue-light">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3 class="category-name">Workshops</h3>
+                    <p class="category-count">92 Events</p>
+                </a>
+                
+                <a href="#" class="category-card">
+                    <div class="category-icon text-green bg-green-light">
+                        <i class="fa-solid fa-guitar"></i>
+                    </div>
+                    <h3 class="category-name">Music</h3>
+                    <p class="category-count">41 Events</p>
+                </a>
+                
+                <a href="#" class="category-card">
+                    <div class="category-icon text-yellow bg-yellow-light">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <h3 class="category-name">Clubs</h3>
+                    <p class="category-count">115 Events</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. UPCOMING EVENTS -->
+    <section id="events" class="events">
+        <div class="container">
+            <div class="section-header flex-between">
+                <div>
+                    <h2 class="section-title">Upcoming Events</h2>
+                    <p class="section-description">Don't miss out on these popular events happening soon.</p>
+                </div>
+                <a href="#" class="btn btn-outline d-desktop">View All Events</a>
+            </div>
+
+            <div class="event-grid">
+                <!-- Event 1 -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/event1.jpg" alt="Global Hackathon 2024" class="cover-img">
+                        <div class="event-badges">
+                            <span class="badge-category bg-white">Technology</span>
+                        </div>
+                    </div>
+                    <div class="event-details">
+                        <div class="event-date">
+                            <span class="date-month">OCT</span>
+                            <span class="date-day">15</span>
+                        </div>
+                        <div class="event-info">
+                            <h3 class="event-title">Global Hackathon 2024</h3>
+                            <p class="event-excerpt">Join a 48-hour coding marathon to solve real-world problems and win amazing prizes.</p>
+                            <div class="event-meta">
+                                <span><i class="fa-regular fa-clock"></i> 9:00 AM - 5:00 PM</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Tech Hub Annex</span>
+                                <span><i class="fa-solid fa-user-group"></i> 250+ attending</span>
+                            </div>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-primary btn-full">View Event</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/event2.jpg" alt="Fall Acoustics Night" class="cover-img">
+                        <div class="event-badges">
+                            <span class="badge-category bg-white">Music</span>
+                        </div>
+                    </div>
+                    <div class="event-details">
+                        <div class="event-date">
+                            <span class="date-month">OCT</span>
+                            <span class="date-day">18</span>
+                        </div>
+                        <div class="event-info">
+                            <h3 class="event-title">Fall Acoustics Night</h3>
+                            <p class="event-excerpt">An evening of relaxing acoustic performances by talented student artists on campus.</p>
+                            <div class="event-meta">
+                                <span><i class="fa-regular fa-clock"></i> 7:00 PM - 10:00 PM</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Open Air Theater</span>
+                                <span><i class="fa-solid fa-user-group"></i> 180+ attending</span>
+                            </div>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-primary btn-full">View Event</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/event3.jpg" alt="Design Thinking Masterclass" class="cover-img">
+                        <div class="event-badges">
+                            <span class="badge-category bg-white">Workshop</span>
+                        </div>
+                    </div>
+                    <div class="event-details">
+                        <div class="event-date">
+                            <span class="date-month">NOV</span>
+                            <span class="date-day">02</span>
+                        </div>
+                        <div class="event-info">
+                            <h3 class="event-title">Design Thinking Masterclass</h3>
+                            <p class="event-excerpt">Learn the fundamentals of UI/UX design and prototyping from industry professionals.</p>
+                            <div class="event-meta">
+                                <span><i class="fa-regular fa-clock"></i> 2:00 PM - 4:00 PM</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Design Studio A</span>
+                                <span><i class="fa-solid fa-user-group"></i> 50+ attending</span>
+                            </div>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-primary btn-full">View Event</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-mobile">
+                <a href="#" class="btn btn-outline d-mobile-inline">View All Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. HOW IT WORKS -->
+    <section class="how-it-works bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-description">Getting involved on campus has never been easier.</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <h3 class="step-title">Discover</h3>
+                    <p class="step-desc">Browse through hundreds of events happening across the campus based on your interests.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-ticket"></i>
+                    </div>
+                    <h3 class="step-title">Register</h3>
+                    <p class="step-desc">Secure your spot with a single click. Get your digital ticket and event reminders.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+                    <h3 class="step-title">Experience</h3>
+                    <p class="step-desc">Attend the event, meet like-minded peers, and make the most out of your college life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. ORGANIZER CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Have an Event to Share?</h2>
+                <p class="cta-description">Create your event and reach thousands of students on your campus. Manage registrations, attendees, and promotions in one place.</p>
+                <a href="create-event.html" class="btn btn-white btn-large">Create an Event</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">Connecting Students, Creating Experiences.</h2>
+                    <p class="about-description">Campus Connect was built with one goal: to make campus life more vibrant and accessible. We bridge the gap between event organizers and students, fostering a stronger community.</p>
+                    <p class="about-description">Whether you're looking to learn new skills, enjoy cultural fests, or build your professional network, our platform is your gateway to everything happening on campus.</p>
+                </div>
+                <div class="about-stats-grid">
+                    <div class="about-stat">
+                        <h4 class="stat-h4">10K+</h4>
+                        <p>Students Connected</p>
+                    </div>
+                    <div class="about-stat">
+                        <h4 class="stat-h4">500+</h4>
+                        <p>Events Created</p>
+                    </div>
+                    <div class="about-stat">
+                        <h4 class="stat-h4">50+</h4>
+                        <p>Campus Communities</p>
+                    </div>
+                    <div class="about-stat">
+                        <h4 class="stat-h4">25K+</h4>
+                        <p>Registrations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. NEWSLETTER -->
+    <section class="newsletter bg-light">
+        <div class="container">
+            <div class="newsletter-box">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">Never Miss an Event</h2>
+                    <p class="newsletter-description">Subscribe to our weekly newsletter to get the latest updates on top campus events directly in your inbox.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your student email" required class="newsletter-input">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo footer-logo">
+                        <i class="fa-solid fa-graduation-cap"></i> Campus Connect
+                    </a>
+                    <p class="footer-desc">The ultimate platform to discover, register, and manage college events. Your campus life, elevated.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Platform</h4>
+                    <ul>
+                        <li><a href="#">Browse Events</a></li>
+                        <li><a href="#">Clubs & Groups</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Host an Event</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-envelope"></i> hello@campusconnect.edu</li>
+                        <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Student Union Bldg, Room 204</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Campus Connect. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
